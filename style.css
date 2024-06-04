@@ -6,43 +6,36 @@
         'Lucida Sans', Arial, sans-serif;
 }
 
-nav {
-    height: 80px;
-    background: #ffb5ad;
+.landing {
+    background-color: #e0d5aa; /* Solid color background */
+    height: 100vh; /* Full viewport height */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
 }
 
 .logo {
     color: #004974;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     font-style: italic;
-    padding: 0 2rem;
+    margin-bottom: 2rem; /* Add margin below the logo */
 }
 
-nav a {
-    text-decoration: none;
+.button-container {
+    margin-top: 2rem; /* Add margin above the button container */
+}
+
+.button {
+    padding: 1rem 2rem; /* Add padding to the button */
+    background-color: #ffb5ad; /* Button background color */
     color: #004974;
-    padding: 0 1.5rem;
+    text-decoration: none;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-nav a:hover {
-    color: #7a7a7a;
-}
-
-.background {
-    background-color: #e0d5aa;
-    display: flex;
-    height: 2000px;
-    justify-content: space-between;
-    width: auto;
-}
-
-@media screen and (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-    }
+.button:hover {
+    background-color: #7a7a7a; /* Button background color on hover */
 }
